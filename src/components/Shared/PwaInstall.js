@@ -53,7 +53,7 @@ const PwaInstall = () => {
     <Button
       onClick={handleInstallClick}
       style={{ display: deferredPrompt ? "block" : "none" }}
-      className="bg-transparent text-white"
+      className="bg-transparent text-white border"
     >
       Get App
     </Button>
