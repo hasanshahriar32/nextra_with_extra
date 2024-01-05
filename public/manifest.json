@@ -33,7 +33,7 @@
   "orientation": "portrait",
   "screenshots": [
     {
-      "src": "AppImages/ios/1024.png",
+      "src": "screenshots/phone.png",
       "sizes": "1024x1024",
       "type": "image/png"
     }
