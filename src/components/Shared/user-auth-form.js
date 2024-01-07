@@ -5,10 +5,19 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
+import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from 'next/router'
 export function UserAuthForm({ className, ...props }) {
   const [isLoading, setIsLoading] = React.useState(false);
-
+  const { data: session } = useSession();
+  const router = useRouter()
+  React.useLayoutEffect(() => {
+    if (session) {
+      // redirect to /doc
+      // window.location.href = "/doc";
+      router.push('/doc')
+    }
+  }, [session]);
   async function onSubmit(event) {
     event.preventDefault();
     setIsLoading(true);
@@ -39,7 +48,7 @@ export function UserAuthForm({ className, ...props }) {
           </div>
           <Button
             onClick={() => {
-              alert("Still on development. please try to sign in with GitHub.");
+              alert("Still on development. please try to sign in with Google.");
             }}
             disabled={isLoading}
           >
@@ -60,13 +69,22 @@ export function UserAuthForm({ className, ...props }) {
           </span>
         </div>
       </div>
-      <Button variant="outline" type="button" disabled={isLoading}>
+      <Button
+        onClick={() =>
+          signIn("google", {
+            callbackUrl: "/doc",
+          })
+        }
+        variant="outline"
+        type="button"
+        // disabled={isLoading}
+      >
         {/* {isLoading ? (
           <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
         ) : (
           <Icons.gitHub className="mr-2 h-4 w-4" />
         )}{" "} */}
-        GitHub
+        Google
       </Button>
     </div>
   );

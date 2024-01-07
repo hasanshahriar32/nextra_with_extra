@@ -1,8 +1,9 @@
 import "@/styles/globals.css";
 import Head from "next/head";
+import { SessionProvider } from "next-auth/react"
 
-export default function App({ Component, pageProps }) {
-  const APP_NAME = "Nextra With Extra";
+export default function App({ Component, pageProps: { session, ...pageProps }}) {
+  const APP_NAME = "Nextra With Xtraa";
   const APP_DESCRIPTION =
     "Take Documentation System on the Next Level⚡";
   const Open_Graph = "/AppImages/ios/1024.png" || "https://i.ibb.co/BjrS0z2/Screenshot-312.png";
@@ -45,7 +46,9 @@ return (
       sizes="512x512"
     />
   </Head>
-  <Component {...pageProps} />
+  <SessionProvider session={session}>
+      <Component {...pageProps} />
+  </SessionProvider>
 </>
 );
 

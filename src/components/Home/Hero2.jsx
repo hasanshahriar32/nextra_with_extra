@@ -28,7 +28,7 @@ export default function Hero2() {
           <h1 className=" bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400 bg-clip-text text-center font-heading text-[40px] font-bold leading-tight tracking-[-0.02em] text-transparent drop-shadow-sm duration-300 ease-linear animate-in zoom-in-75 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900 md:text-7xl md:leading-[5rem]">
             <Balancer> Nextra With{" "}
                 <span className="underline font-extrabold ">
-                  Extra
+                  Xtraa
                 </span>{" "}
                 (NWX)
             </Balancer>
@@ -36,13 +36,13 @@ export default function Hero2() {
           <p className="mt-6 text-center text-muted-foreground md:text-xl">
             <Balancer>
               Take Documentation System to the Next Level⚡. Have an project
-                that might need a documentation system? Nextra With Extra (NWX)
+                that might need a documentation system? Nextra With Xtraa (NWX)
                 is the perfect choice for you. We have added some extra features
                 to the Nextra theme to make it more powerful and easy to use.
             </Balancer>
           </p>
           <div className="mx-auto mt-6 flex items-center justify-center space-x-5">
-            <Link className={buttonVariants() + " gap-x-2"} href="/doc">
+            <Link className={buttonVariants() + " gap-x-2"} href="/login">
               Get Started
             </Link>
 
