@@ -1,8 +1,6 @@
-// PwaInstall.js
+
 import { useEffect, useState } from "react";
-
-import { Button } from "@/components/ui/button";
-
+import { buttonVariants } from "@/components/ui/button";
 const PwaInstall = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
 
@@ -30,7 +28,11 @@ const PwaInstall = () => {
     event.preventDefault();
 
     // Display confirmation alert to install from the user
-
+    // if (
+    //   window.confirm(
+    //     "The app is still in development stage. Some devices might face flickering issues. Please use the website for better experience. Click OK to continue."
+    //   )
+    // ) {
     if (deferredPrompt) {
       // Show the installation prompt
       deferredPrompt.prompt();
@@ -47,16 +49,17 @@ const PwaInstall = () => {
         setDeferredPrompt(null);
       });
     }
+    // }
   };
 
   return (
-    <Button
-      onClick={handleInstallClick}
+    <button
+      className={buttonVariants({ variant: "outline" }) + " gap-x-2"}
       style={{ display: deferredPrompt ? "block" : "none" }}
-      className="bg-transparent text-white border"
+      onClick={handleInstallClick}
     >
-      Get App
-    </Button>
+      <span className="font-medium">Get App</span>
+    </button>
   );
 };
 
