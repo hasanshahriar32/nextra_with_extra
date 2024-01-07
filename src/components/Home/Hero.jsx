@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section className="w-full flex justify-center">
-      <div className="min-w-[80vw] px-4 md:px-0">
+      <div className="min-w-[90vw] md:min-w-[80vw] px-4 md:px-0">
         <VideoBanner />
       </div>
     </section>
