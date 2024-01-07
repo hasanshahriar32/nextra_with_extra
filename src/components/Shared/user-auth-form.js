@@ -33,10 +33,16 @@ export function UserAuthForm({ className, ...props }) {
               autoCapitalize="none"
               autoComplete="email"
               autoCorrect="off"
-              disabled={isLoading}
+              // disabled={isLoading}
+              disabled={true}
             />
           </div>
-          <Button disabled={isLoading}>
+          <Button
+            onClick={() => {
+              alert("Still on development. please try to sign in with GitHub.");
+            }}
+            disabled={isLoading}
+          >
             {/* {isLoading && (
               <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
             )} */}

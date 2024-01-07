@@ -10,6 +10,13 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+  session: {
+    strategy: "jwt",
+  },
+  secret: process.env.NEXT_SECRET,
+  pages: {
+    signin: "/login",
+  },
 };
 
 export default NextAuth(authOptions);
