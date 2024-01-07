@@ -13,7 +13,7 @@ export default function Hero() {
             <div className="space-y-2 mb-6">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
                 Nextra With{" "}
-                <span className="text-destructive font-extrabold text-4xl tracking-tighter sm:text-6xl xl:text-7xl/none">
+                <span className="text-destructive font-extrabold text-4xl tracking-tight underline-offset-3 sm:text-6xl xl:text-7xl/none">
                   Extra
                 </span>{" "}
                 (NWX)
