@@ -27,7 +27,7 @@ export default function Hero2() {
           </a>
           <h1 className=" bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400 bg-clip-text text-center font-heading text-[40px] font-bold leading-tight tracking-[-0.02em] text-transparent drop-shadow-sm duration-300 ease-linear animate-in zoom-in-75 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900 md:text-7xl md:leading-[5rem]">
             <Balancer> Nextra With{" "}
-                <span className="text-destructive font-extrabold ">
+                <span className="underline font-extrabold ">
                   Extra
                 </span>{" "}
                 (NWX)
