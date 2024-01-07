@@ -11,7 +11,7 @@ export default function Hero2() {
 
   return (
     <section>
-      <div className="container flex h-full min-h-[calc(100vh-140px)] w-full flex-col items-center justify-center space-y-20 py-14 md:min-h-[calc(100vh-160px)] xl:py-24">
+      <div className="container flex h-full min-h-[calc(100vh-140px)] w-full flex-col items-center justify-center space-y-20 py-14 md:min-h-[calc(100vh-160px)] xl:pt-24">
         <div className="mx-auto w-full max-w-2xl ">
           <a
             href="https://paradox-bd.com"

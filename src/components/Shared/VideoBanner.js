@@ -58,9 +58,9 @@ const VideoBanner = () => {
 
   return (
     <div>
-      <div className="pb-12 mt-5">
+      <div className="pb-12">
         <div className="relative w-full">
-          <div className="absolute w-[80vw] lg:w-[60vw] bg-gradient-to-r from-gray-800 via-gray-500 to-gray-900 blur-lg filter opacity-30 h-full inset-0 bg-gray-50"></div>
+          <div className="absolute w-[80vw] bg-gradient-to-r dark:from-gray-900 from-gray-200 dark:via-gray-500 via-gray-600 dark:to-gray-900 to-gray-100 blur-lg filter opacity-30 h-full inset-0 bg-gray-50"></div>
           <div className="relative mx-auto">
             <div className="lg:max-w-5xl py-5 mx-6 lg:py-10 lg:mx-2">
               <div

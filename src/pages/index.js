@@ -1,3 +1,4 @@
+import Hero from "@/components/Home/Hero";
 import Hero2 from "@/components/Home/Hero2";
 import Features from "@/components/Home/Features";
 import Pricing from "@/components/Home/Pricing";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main className={``}>
       <Hero2 />
+      <Hero />
       <Features />
       <Pricing />
       <OpenSource />
