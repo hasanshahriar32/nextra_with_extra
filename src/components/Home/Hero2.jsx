@@ -42,7 +42,7 @@ export default function Hero2() {
             </Balancer>
           </p>
           <div className="mx-auto mt-6 flex items-center justify-center space-x-5">
-            <Link className={buttonVariants() + " gap-x-2"} href="/login">
+            <Link className={buttonVariants() + " gap-x-2"} href="/doc">
               Get Started
             </Link>
 
