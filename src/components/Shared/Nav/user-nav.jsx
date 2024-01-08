@@ -39,13 +39,15 @@ export default function UserNav({}) {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-            <Button onClick={()=>signOut()}
+            <div>
+              <Button onClick={()=>signOut()}
               className=" h-auto w-full justify-start p-0 hover:bg-transparent"
               variant="ghost"
             >
               <LogOut className="mr-2 h-4 w-4" />
               <span>Log out</span>
-            </Button>
+             </Button>
+            </div>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
