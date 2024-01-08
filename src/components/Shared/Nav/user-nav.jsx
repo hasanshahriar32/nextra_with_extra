@@ -40,7 +40,6 @@ export default function UserNav({}) {
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
             <Button onClick={()=>signOut()}
-              type="submit"
               className=" h-auto w-full justify-start p-0 hover:bg-transparent"
               variant="ghost"
             >
