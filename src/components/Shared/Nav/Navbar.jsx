@@ -1,25 +1,26 @@
-"use client";
-
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { buttonVariants } from "~/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet";
-import UserNav from "../user-nav";
-export default function Navbar({ loggedInUser }) {
+import { buttonVariants } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import UserNav from "./user-nav";
+import { useSession, signIn, signOut } from "next-auth/react";
+export default function Navbar({}) {
+  const { data: session } = useSession();
+  const loggedInUser = session?.user;
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <nav className="flex h-full items-center justify-between">
       <Link href="/" className="flex items-center text-2xl font-bold">
         <Image
-          src="/chad-next.png"
-          alt="Noipunno logo"
+          src="/favicon.ico"
+          alt="NPX logo"
           width="30"
           height="30"
           className="mr-2 rounded-sm object-contain"
         />
-        <p>Noipunno</p>
+        <p>NPX</p>
       </Link>
       <div className="hidden items-center gap-12 md:flex 2xl:gap-16">
         <div className="space-x-4 text-center text-sm leading-loose text-muted-foreground md:text-left">
