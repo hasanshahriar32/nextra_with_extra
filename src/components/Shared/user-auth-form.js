@@ -6,18 +6,18 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 export function UserAuthForm({ className, ...props }) {
   const [isLoading, setIsLoading] = React.useState(false);
   const { data: session } = useSession();
-  const router = useRouter()
+  const router = useRouter();
   React.useLayoutEffect(() => {
     if (session) {
       // redirect to /doc
       // window.location.href = "/doc";
-      router.push('/doc')
+      router.push("/doc");
     }
-  }, [session]);
+  }, [router, session]);
   async function onSubmit(event) {
     event.preventDefault();
     setIsLoading(true);

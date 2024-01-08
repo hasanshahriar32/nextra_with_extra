@@ -58,11 +58,11 @@ const VideoBanner = () => {
 
   return (
     <div>
-      <div className="pb-12">
+      <div className="pb-12 ">
         <div className="relative w-full">
-          <div className="absolute w-[80vw] bg-gradient-to-r dark:from-gray-900 from-gray-200 dark:via-gray-500 via-gray-600 dark:to-gray-900 to-gray-100 blur-lg filter opacity-30 h-full inset-0 bg-gray-50"></div>
+          <div className="absolute w-[80vw] mx-10 overflow-hidden bg-gradient-to-r dark:from-gray-900 from-gray-200 dark:via-gray-300 via-gray-700 dark:to-gray-900 to-gray-100 blur-lg filter opacity-30 dark:opacity-10 h-full inset-0 bg-gray-50 max-w-screen-lg"></div>
           <div className="relative mx-auto">
-            <div className="lg:max-w-5xl py-5 mx-6 lg:py-10 lg:mx-2">
+            <div className="py-5 mx-6 lg:py-10 lg:mx-2">
               <div
                 className="embed-responsive my-3 embed-responsive-16by9 relative w-full overflow-hidden rounded-lg shadow-lg"
                 style={{ paddingTop: "56.25%" }}

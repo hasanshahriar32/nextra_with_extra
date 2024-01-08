@@ -5,7 +5,6 @@ import Pricing from "@/components/Home/Pricing";
 import OpenSource from "@/components/Home/OpenSource";
 import Footer from "@/components/Shared/Footer";
 
-
 export default function Home() {
   return (
     <main className={``}>

@@ -1,13 +1,10 @@
-import Link from "next/link";
 
-import PwaInstall from "@/components/Shared/PwaInstall";
 import VideoBanner from "@/components/Shared/VideoBanner";
-import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
     <section className="w-full flex justify-center">
-      <div className="min-w-[90vw] md:min-w-[80vw] px-4 md:px-0">
+      <div className="min-w-[90vw] md:min-w-[80vw] mx-5 md:mx-10 max-w-4xl">
         <VideoBanner />
       </div>
     </section>
