@@ -15,12 +15,12 @@ export default function Navbar({}) {
       <Link href="/" className="flex items-center text-2xl font-bold">
         <Image
           src="/favicon.ico"
-          alt="NPX logo"
+          alt="NWX logo"
           width="30"
           height="30"
           className="mr-2 rounded-sm object-contain"
         />
-        <p>NPX</p>
+        <p>NWX</p>
       </Link>
       <div className="hidden items-center gap-12 md:flex 2xl:gap-16">
         <div className="space-x-4 text-center text-sm leading-loose text-muted-foreground md:text-left">
