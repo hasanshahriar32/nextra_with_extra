@@ -39,7 +39,6 @@ export default function UserNav({}) {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <form>
             <Button onClick={()=>signOut()}
               type="submit"
               className=" h-auto w-full justify-start p-0 hover:bg-transparent"
@@ -48,7 +47,6 @@ export default function UserNav({}) {
               <LogOut className="mr-2 h-4 w-4" />
               <span>Log out</span>
             </Button>
-          </form>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
